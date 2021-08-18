@@ -1,0 +1,50 @@
+<div class="card outerCard">
+
+    <div class="contents" *ngIf="projectToShow == 'treasure-hunt'">
+        <h1 class = "header">Subject of a Treasure Hunt</h1>
+        <p>
+            ‘The subject of a treasure hunt’ is a mobile app designed to help new students learn about the facilities and resources provided by the university.  <br><br>
+            Through the use of user location and mapping, the app aims to serve students with riddles relevant to their degree, which can then be solved by exploring specific locations containing the answer.
+            Utilizing an achievement based reward system, participants are motivated to answer more riddles by exploring each location thoroughly. <br><br>
+            By bringing an objective to campus orientation, riddles can prompt students to explore the campus and learn important information in the process.
+            Our implementation of riddles in a location-aware context would aim to provide students with an app they can use on campus in their own time, with potential for the university to expand later down the road. <br><br>
+    
+            This application was built in 2020 as a Group Project for David Bainbridge as part of COMPX241 "Smoke and Mirrors". <br><br>
+            Source code can be found my GitHub.
+        </p>
+    
+        <h1 class="header">Images</h1>
+        <div class="imageContainer">
+            <div class="card image">
+                <!--Put an image of the app here-->
+            </div>
+            <div class="card image">
+                <!--Put an image of the app here-->
+            </div>
+        </div>
+    </div>
+
+    <div class="contents" *ngIf="projectToShow == 'portfolio-page'">
+        <h1 class = "header">This webpage</h1>
+        <p>
+            I built this webpage as a digital portfolio of a few notable programming projects and experiences I've had outside of university work. I update this page on a frequent basis. <br><br>
+            
+            Angular v12 was used as the framework. <br><br>
+            
+            My vision was to create a minimal webpage which communicates my work without bearing an overly complex or extravagant design . Below are some of the design concepts I came up with. 
+        </p>
+        <h1 class="header">Images</h1>
+        <div class="imageContainer">
+            <div class="card image">
+                <!--Put an image of the app here-->
+            </div>
+            <div class="card image">
+                <!--Put an image of the app here-->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="button" (click)="close()">Close</div>
+</div>
+
