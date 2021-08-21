@@ -1,0 +1,22 @@
+<body>
+    <app-treasure-hunt class = "expand" *ngIf="viewDetail" (toggleView)="toggleClose($event)" [projectToShow]="viewing"></app-treasure-hunt>
+    <div class ="vertical_bar">
+        <div class="box" (click)="onClickMe('PROJECTS')" *ngIf="!viewDetail">
+            <h1 class="header">Projects</h1>
+            <a class="link" *ngIf="ProjectsExpand" (click)="showProject('treasure-hunt')">Subject of a treasure hunt</a>
+            <a class="link" *ngIf="ProjectsExpand" (click)="showProject('portfolio-page')">Portfolio webpage</a>
+            <a class="link" *ngIf="ProjectsExpand" >Coming soon...</a>
+        </div>
+        <div class="box" (click)="onClickMe('EXPERIENCE')" *ngIf="!viewDetail">
+            <h1 class="header">Work Experience</h1>
+            <a class="link" *ngIf="ExperienceExpand" (click)="showProject('lic-work')">LIC (Livestock Improvement Corporation)</a>
+        </div>
+        <div class="box" (click)="onClickMe('ME')" *ngIf="!viewDetail">
+            <h1 class="header">About me</h1>
+            <h4 class="link" *ngIf="MeExpand" (click)="redirect('https://www.linkedin.com/in/zachary-cui7/')">LinkedIn</h4>
+            <h4 class="link" *ngIf="MeExpand" (click)="redirect('https://github.com/ZC77')">GitHub</h4>
+        </div>
+    </div>
+
+    <p class="name" *ngIf="!viewDetail">Zachary Cui</p>
+</body>
