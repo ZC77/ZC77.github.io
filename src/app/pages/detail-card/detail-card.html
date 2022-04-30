@@ -1,0 +1,139 @@
+<div class="card outerCard">
+  <div class="contents" *ngIf="projectToShow == 'treasure-hunt'">
+    <h1 class="header">Subject of a Treasure Hunt</h1>
+    <p>
+      ‘The subject of a treasure hunt’ is a mobile app designed to help new
+      students learn about the facilities and resources provided by the
+      university. <br /><br />
+      Through the use of user location and mapping, the app aims to serve
+      students with riddles relevant to their degree, which can then be solved
+      by exploring specific locations containing the answer. Utilizing an
+      achievement based reward system, participants are motivated to answer more
+      riddles by exploring each location thoroughly. <br /><br />
+      By bringing an objective to campus orientation, riddles can prompt
+      students to explore the campus and learn important information in the
+      process. Our implementation of riddles in a location-aware context would
+      aim to provide students with an app they can use on campus in their own
+      time, with potential for the university to expand later down the road.
+      <br /><br />
+
+      This application was built in 2020 as a Group Project for David Bainbridge
+      as part of COMPX241 "Smoke and Mirrors". <br /><br />
+      Source code can be found my GitHub.
+    </p>
+
+    <h1 class="header">Images</h1>
+    <div class="imageContainer">
+      <div class="card image">
+        <img src="../../../assets/images/treasure_hunt_home.jpg" />
+      </div>
+      <div class="card image">
+        <img src="../../../assets/images/treasure_hunt_awards.jpg" />
+      </div>
+    </div>
+  </div>
+
+  <div class="contents" *ngIf="projectToShow == 'portfolio-page'">
+    <h1 class="header">This webpage</h1>
+    <p>
+      I built this webpage as a digital portfolio of a few notable programming
+      projects and experiences I've had outside of university work. I update
+      this page on a frequent basis. <br /><br />
+
+      Angular v12 was used as the framework. <br /><br />
+
+      My vision was to create a minimal webpage which communicates my work
+      without bearing an overly complex or extravagant design . Below are some
+      of the design concepts I came up with.
+    </p>
+
+    <h1 class="header">Images</h1>
+    <div class="imageContainer">
+      <div class="card image">
+        <img src="../../../assets/images/concept_1.png" />
+      </div>
+      <div class="card image">
+        <img src="../../../assets/images/concept_2.PNG" />
+      </div>
+      <div class="card image">
+        <img src="../../../assets/images/concept_3.PNG" />
+      </div>
+    </div>
+  </div>
+
+  <div class="contents" *ngIf="projectToShow == 'hortplus-sprayplan'">
+    <h1 class="header">HortPlus SprayPlan Manager MVP</h1>
+    <p>
+      Spray Plan manager is an application used to assist agricultural growers
+      with managing their agrichemical use. <br /><br />
+
+      As part of a Software Engineering industry project, the objective was to
+      rebuild the legacy Spray Plan system with a modern tech stack. I worked in
+      a team of 4 to develop a MVP for HortPlus. <br /><br />
+
+      Bhavit and I built the entire frontend from scratch Using React
+      TypeScript, React Router, Formik and Bootstrap. The result was a
+      successful MVP product which launched shortly after the project's
+      conclusion.<br /><br />
+
+      <a href="sprayplan.nz">You can visit the webpage by clicking here.</a>
+    </p>
+
+    <h1 class="header">Images</h1>
+    <div class="imageContainer">
+      <div class="card image">
+        <img src="../../../assets/images/hortplus-sprayplan.png" />
+      </div>
+    </div>
+  </div>
+
+  <div class="contents" *ngIf="projectToShow == 'lic-work'">
+    <h1 class="header">LIC Automation</h1>
+    <p>
+      At LIC, my role was to evaluate the feasibility of transitioning an
+      existing Angular frontend to Blazor WebAssembly by developing a functional
+      prototype. <br />
+      In addition to a feature development role, this helped to significantly
+      develop my experience with full stack development. <br /><br />
+
+      Working in a close team with other developers, the daily standup and
+      bi-weekly presentation helped to develop my technical and communication
+      skills, while providing expereince in an Agile development enviroment.
+    </p>
+
+    <h4>Tech Stack:</h4>
+    <p style="font-style: italic">
+      C#, .NET Core, Blazor WebAssembly, Angular, Azure DevOps
+    </p>
+  </div>
+
+  <div class="contents" *ngIf="projectToShow == 'halter'">
+    <h1 class="header">Halter</h1>
+    <p>
+      At Halter, I worked in a small team responsible for the development of
+      several internal and customer facing tools. During my time at the company,
+      I made significant contributions towards the development of the Halter
+      Login Portal, with the most significant being the implementation of entire
+      frontend.
+      <br /><br />
+
+      <a href="login.halter.io">You can visit the webpage by clicking here.</a>
+      <br /><br />
+
+      In addition to this, I also contributed towards improvments for tools
+      responsible in the process of mapping and debugging Halter systems. Both
+      of these efforts helped to significantly improve my React TypeScript
+      skills, in addition to reinforcing my self-directed learning skills. Below
+      are some screenshots of the login portal:
+    </p>
+
+    <h1 class="header">Images</h1>
+    <div class="imageContainer">
+      <div class="card image">
+        <img src="../../../assets/images/halter-login.png" />
+      </div>
+    </div>
+  </div>
+
+  <div class="button" (click)="close()">Close</div>
+</div>
